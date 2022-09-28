@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F0984E728CB6E1B000589F5 /* PopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0984E628CB6E1B000589F5 /* PopUpView.swift */; };
+		6F2332DE28D04D8C00A09A77 /* dunyaSiralamasiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2332DD28D04D8B00A09A77 /* dunyaSiralamasiModel.swift */; };
+		6F2332E028D0670400A09A77 /* odaOlusturVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2332DF28D0670400A09A77 /* odaOlusturVC.swift */; };
+		6F2332E228D0B6E500A09A77 /* dunyaSiralamasiVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2332E128D0B6E500A09A77 /* dunyaSiralamasiVC.swift */; };
+		6F2332E428D0B73D00A09A77 /* arkadaslarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2332E328D0B73D00A09A77 /* arkadaslarVC.swift */; };
+		6F2332E828D1A64A00A09A77 /* FriendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2332E728D1A64A00A09A77 /* FriendsTableViewCell.swift */; };
+		6F2332EC28D1E32600A09A77 /* CreateRoomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2332EB28D1E32600A09A77 /* CreateRoomModel.swift */; };
+		6F2332EE28D1E42500A09A77 /* CreateRoomResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2332ED28D1E42500A09A77 /* CreateRoomResponseModel.swift */; };
+		6F2332F028D337ED00A09A77 /* OyunOdasiVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2332EF28D337ED00A09A77 /* OyunOdasiVC.swift */; };
+		6F2332F228D3544100A09A77 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2332F128D3544100A09A77 /* File.swift */; };
+		6F2332F428D355D900A09A77 /* sendConfirmationCodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2332F328D355D900A09A77 /* sendConfirmationCodeModel.swift */; };
+		6F2332F628D3565300A09A77 /* CheckConfirmationCodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2332F528D3565300A09A77 /* CheckConfirmationCodeModel.swift */; };
+		6F2332F828D356CA00A09A77 /* SendConfirmationcodeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2332F728D356CA00A09A77 /* SendConfirmationcodeResponse.swift */; };
+		6F2332FA28D3579F00A09A77 /* CheckConfirmationCodeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2332F928D3579F00A09A77 /* CheckConfirmationCodeResponse.swift */; };
 		6F43FA4C28BAB7BA00D9A561 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F43FA4B28BAB7BA00D9A561 /* AppDelegate.swift */; };
 		6F43FA4E28BAB7BA00D9A561 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F43FA4D28BAB7BA00D9A561 /* SceneDelegate.swift */; };
 		6F43FA5028BAB7BA00D9A561 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F43FA4F28BAB7BA00D9A561 /* ViewController.swift */; };
@@ -27,6 +41,9 @@
 		6F43FA9328BAB9C300D9A561 /* RegisterDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F43FA9228BAB9C300D9A561 /* RegisterDataModel.swift */; };
 		6F43FA9528BABA1600D9A561 /* LoginRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F43FA9428BABA1600D9A561 /* LoginRequestModel.swift */; };
 		6F43FA9728BABA2600D9A561 /* RegisterRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F43FA9628BABA2600D9A561 /* RegisterRequestModel.swift */; };
+		6F4A389728CB5AD500D222CF /* parolamiUnuttumVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4A389628CB5AD500D222CF /* parolamiUnuttumVC.swift */; };
+		6F5305A528C207A000824E22 /* SorularVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5305A428C207A000824E22 /* SorularVC.swift */; };
+		6FBC64F628C8A2B800083B24 /* OyunSonucuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBC64F528C8A2B800083B24 /* OyunSonucuVC.swift */; };
 		6FE37BBA28BCAAB7001C6735 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE37BB928BCAAB7001C6735 /* GlobalConstants.swift */; };
 		6FE37BBC28BCD33D001C6735 /* UserProfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE37BBB28BCD33D001C6735 /* UserProfilViewController.swift */; };
 		6FE37BBE28BCDD3A001C6735 /* GetUserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE37BBD28BCDD3A001C6735 /* GetUserInfoModel.swift */; };
@@ -53,6 +70,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6F0984E628CB6E1B000589F5 /* PopUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpView.swift; sourceTree = "<group>"; };
+		6F2332DD28D04D8B00A09A77 /* dunyaSiralamasiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dunyaSiralamasiModel.swift; sourceTree = "<group>"; };
+		6F2332DF28D0670400A09A77 /* odaOlusturVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = odaOlusturVC.swift; sourceTree = "<group>"; };
+		6F2332E128D0B6E500A09A77 /* dunyaSiralamasiVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dunyaSiralamasiVC.swift; sourceTree = "<group>"; };
+		6F2332E328D0B73D00A09A77 /* arkadaslarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = arkadaslarVC.swift; sourceTree = "<group>"; };
+		6F2332E728D1A64A00A09A77 /* FriendsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewCell.swift; sourceTree = "<group>"; };
+		6F2332EB28D1E32600A09A77 /* CreateRoomModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoomModel.swift; sourceTree = "<group>"; };
+		6F2332ED28D1E42500A09A77 /* CreateRoomResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoomResponseModel.swift; sourceTree = "<group>"; };
+		6F2332EF28D337ED00A09A77 /* OyunOdasiVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OyunOdasiVC.swift; sourceTree = "<group>"; };
+		6F2332F128D3544100A09A77 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		6F2332F328D355D900A09A77 /* sendConfirmationCodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sendConfirmationCodeModel.swift; sourceTree = "<group>"; };
+		6F2332F528D3565300A09A77 /* CheckConfirmationCodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckConfirmationCodeModel.swift; sourceTree = "<group>"; };
+		6F2332F728D356CA00A09A77 /* SendConfirmationcodeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendConfirmationcodeResponse.swift; sourceTree = "<group>"; };
+		6F2332F928D3579F00A09A77 /* CheckConfirmationCodeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckConfirmationCodeResponse.swift; sourceTree = "<group>"; };
 		6F43FA4828BAB7BA00D9A561 /* brain_X_game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = brain_X_game.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F43FA4B28BAB7BA00D9A561 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F43FA4D28BAB7BA00D9A561 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +108,9 @@
 		6F43FA9228BAB9C300D9A561 /* RegisterDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterDataModel.swift; sourceTree = "<group>"; };
 		6F43FA9428BABA1600D9A561 /* LoginRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequestModel.swift; sourceTree = "<group>"; };
 		6F43FA9628BABA2600D9A561 /* RegisterRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRequestModel.swift; sourceTree = "<group>"; };
+		6F4A389628CB5AD500D222CF /* parolamiUnuttumVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = parolamiUnuttumVC.swift; sourceTree = "<group>"; };
+		6F5305A428C207A000824E22 /* SorularVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SorularVC.swift; sourceTree = "<group>"; };
+		6FBC64F528C8A2B800083B24 /* OyunSonucuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OyunSonucuVC.swift; sourceTree = "<group>"; };
 		6FE37BB928BCAAB7001C6735 /* GlobalConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
 		6FE37BBB28BCD33D001C6735 /* UserProfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfilViewController.swift; sourceTree = "<group>"; };
 		6FE37BBD28BCDD3A001C6735 /* GetUserInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserInfoModel.swift; sourceTree = "<group>"; };
@@ -110,10 +144,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6F2332EA28D1E1AE00A09A77 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				6F43FA8428BAB8FF00D9A561 /* LoginService.swift */,
+				6FE37BC128BCDFA5001C6735 /* OyunSeviyesiBelirleme.swift */,
+				6F2332DF28D0670400A09A77 /* odaOlusturVC.swift */,
+				6F2332EF28D337ED00A09A77 /* OyunOdasiVC.swift */,
+				6F2332E128D0B6E500A09A77 /* dunyaSiralamasiVC.swift */,
+				6F5305A428C207A000824E22 /* SorularVC.swift */,
+				6F4A389628CB5AD500D222CF /* parolamiUnuttumVC.swift */,
+				6F43FA8828BAB92800D9A561 /* OyunSecimVC.swift */,
+				6F2332E328D0B73D00A09A77 /* arkadaslarVC.swift */,
+				6F2332E728D1A64A00A09A77 /* FriendsTableViewCell.swift */,
+				6F43FA8628BAB90F00D9A561 /* RegisterService.swift */,
+				6FBC64F528C8A2B800083B24 /* OyunSonucuVC.swift */,
+				6FE37BBB28BCD33D001C6735 /* UserProfilViewController.swift */,
+				6F43FA4F28BAB7BA00D9A561 /* ViewController.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		6F43FA3F28BAB7BA00D9A561 = {
 			isa = PBXGroup;
 			children = (
 				6F43FA8128BAB83800D9A561 /* model */,
+				6F2332EA28D1E1AE00A09A77 /* view */,
 				6F43FA8028BAB82400D9A561 /* Constant Veriable */,
 				6F43FA4A28BAB7BA00D9A561 /* brain_X_game */,
 				6F43FA6428BAB7BC00D9A561 /* brain_X_gameTests */,
@@ -135,15 +191,9 @@
 		6F43FA4A28BAB7BA00D9A561 /* brain_X_game */ = {
 			isa = PBXGroup;
 			children = (
-				6F43FA7E28BAB7FE00D9A561 /* api */,
 				6F43FA4B28BAB7BA00D9A561 /* AppDelegate.swift */,
+				6F0984E628CB6E1B000589F5 /* PopUpView.swift */,
 				6F43FA4D28BAB7BA00D9A561 /* SceneDelegate.swift */,
-				6F43FA8428BAB8FF00D9A561 /* LoginService.swift */,
-				6FE37BC128BCDFA5001C6735 /* OyunSeviyesiBelirleme.swift */,
-				6F43FA8828BAB92800D9A561 /* OyunSecimVC.swift */,
-				6F43FA8628BAB90F00D9A561 /* RegisterService.swift */,
-				6FE37BBB28BCD33D001C6735 /* UserProfilViewController.swift */,
-				6F43FA4F28BAB7BA00D9A561 /* ViewController.swift */,
 				6F43FA5128BAB7BA00D9A561 /* Main.storyboard */,
 				6F43FA5728BAB7BC00D9A561 /* Assets.xcassets */,
 				6F43FA5928BAB7BC00D9A561 /* LaunchScreen.storyboard */,
@@ -170,13 +220,6 @@
 			path = brain_X_gameUITests;
 			sourceTree = "<group>";
 		};
-		6F43FA7E28BAB7FE00D9A561 /* api */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = api;
-			sourceTree = "<group>";
-		};
 		6F43FA8028BAB82400D9A561 /* Constant Veriable */ = {
 			isa = PBXGroup;
 			children = (
@@ -199,6 +242,10 @@
 			isa = PBXGroup;
 			children = (
 				6F43FA9428BABA1600D9A561 /* LoginRequestModel.swift */,
+				6F2332F528D3565300A09A77 /* CheckConfirmationCodeModel.swift */,
+				6F2332F328D355D900A09A77 /* sendConfirmationCodeModel.swift */,
+				6F2332EB28D1E32600A09A77 /* CreateRoomModel.swift */,
+				6F2332F128D3544100A09A77 /* File.swift */,
 				6F43FA9628BABA2600D9A561 /* RegisterRequestModel.swift */,
 			);
 			path = requestModel;
@@ -211,9 +258,13 @@
 				6F43FA8E28BAB99200D9A561 /* DataModel.swift */,
 				6FE37BBD28BCDD3A001C6735 /* GetUserInfoModel.swift */,
 				6FE37BBF28BCDE92001C6735 /* UserDataModel.swift */,
+				6F2332F728D356CA00A09A77 /* SendConfirmationcodeResponse.swift */,
+				6F2332ED28D1E42500A09A77 /* CreateRoomResponseModel.swift */,
+				6F2332F928D3579F00A09A77 /* CheckConfirmationCodeResponse.swift */,
 				6F43FA9028BAB9B100D9A561 /* RegisterResponseModel.swift */,
 				6F43FA9228BAB9C300D9A561 /* RegisterDataModel.swift */,
 				6FE37BC328BE9709001C6735 /* WebService.swift */,
+				6F2332DD28D04D8B00A09A77 /* dunyaSiralamasiModel.swift */,
 			);
 			path = responseModel;
 			sourceTree = "<group>";
@@ -349,6 +400,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F2332EC28D1E32600A09A77 /* CreateRoomModel.swift in Sources */,
 				6F43FA8928BAB92800D9A561 /* OyunSecimVC.swift in Sources */,
 				6FE37BC228BCDFA5001C6735 /* OyunSeviyesiBelirleme.swift in Sources */,
 				6FE37BBA28BCAAB7001C6735 /* GlobalConstants.swift in Sources */,
@@ -356,19 +408,35 @@
 				6FE37BBC28BCD33D001C6735 /* UserProfilViewController.swift in Sources */,
 				6F43FA8728BAB91000D9A561 /* RegisterService.swift in Sources */,
 				6F43FA5028BAB7BA00D9A561 /* ViewController.swift in Sources */,
+				6F2332F028D337ED00A09A77 /* OyunOdasiVC.swift in Sources */,
 				6F43FA5628BAB7BA00D9A561 /* brain_X_game.xcdatamodeld in Sources */,
+				6F2332E428D0B73D00A09A77 /* arkadaslarVC.swift in Sources */,
+				6F2332F428D355D900A09A77 /* sendConfirmationCodeModel.swift in Sources */,
 				6FE37BC028BCDE92001C6735 /* UserDataModel.swift in Sources */,
+				6F0984E728CB6E1B000589F5 /* PopUpView.swift in Sources */,
 				6F43FA8528BAB8FF00D9A561 /* LoginService.swift in Sources */,
+				6FBC64F628C8A2B800083B24 /* OyunSonucuVC.swift in Sources */,
+				6F2332E828D1A64A00A09A77 /* FriendsTableViewCell.swift in Sources */,
 				6F43FA8F28BAB99200D9A561 /* DataModel.swift in Sources */,
 				6F43FA9328BAB9C300D9A561 /* RegisterDataModel.swift in Sources */,
+				6F2332FA28D3579F00A09A77 /* CheckConfirmationCodeResponse.swift in Sources */,
 				6F43FA8B28BAB94800D9A561 /* ConstantVeriable.swift in Sources */,
+				6F5305A528C207A000824E22 /* SorularVC.swift in Sources */,
 				6FE37BBE28BCDD3A001C6735 /* GetUserInfoModel.swift in Sources */,
+				6F2332F828D356CA00A09A77 /* SendConfirmationcodeResponse.swift in Sources */,
 				6F43FA9128BAB9B100D9A561 /* RegisterResponseModel.swift in Sources */,
+				6F4A389728CB5AD500D222CF /* parolamiUnuttumVC.swift in Sources */,
 				6F43FA8D28BAB98000D9A561 /* LoginResponseModel.swift in Sources */,
+				6F2332DE28D04D8C00A09A77 /* dunyaSiralamasiModel.swift in Sources */,
 				6F43FA4C28BAB7BA00D9A561 /* AppDelegate.swift in Sources */,
+				6F2332EE28D1E42500A09A77 /* CreateRoomResponseModel.swift in Sources */,
 				6F43FA9728BABA2600D9A561 /* RegisterRequestModel.swift in Sources */,
 				6FE37BC428BE9709001C6735 /* WebService.swift in Sources */,
+				6F2332E028D0670400A09A77 /* odaOlusturVC.swift in Sources */,
 				6F43FA4E28BAB7BA00D9A561 /* SceneDelegate.swift in Sources */,
+				6F2332F228D3544100A09A77 /* File.swift in Sources */,
+				6F2332E228D0B6E500A09A77 /* dunyaSiralamasiVC.swift in Sources */,
+				6F2332F628D3565300A09A77 /* CheckConfirmationCodeModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

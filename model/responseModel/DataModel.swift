@@ -8,5 +8,4 @@
 import Foundation
 struct DataModel : Codable{
     let token : String
-    
 }

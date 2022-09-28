@@ -10,6 +10,6 @@ class RegisterResponseModel:Codable{
     
     let code : String
     let data : RegisterDataModel
- 
+    
 
 }

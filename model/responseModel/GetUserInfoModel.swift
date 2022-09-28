@@ -8,6 +8,6 @@
 import Foundation
 struct GetUserInfoModel:Codable{
     let code: String
-   // let data: UserDataModel
-    
+    let data: UserDataModel
 }
+

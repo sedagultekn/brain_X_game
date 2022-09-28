@@ -6,15 +6,47 @@
 //
 
 import Foundation
+import UIKit
 struct UserDataModel:Codable{
-    let id: String
-    let userName : String
-    let email: String
-    let photo :Int
-    let level:Int
-    let life:Int
+    let id: Int
+    let userName, email: String
+    let photo: String?
+    let level, life: Int
     let levelName: String
-    let score:Int
+    let score: Int
     let userPosition: String
-    //"userFriends": []
+    let userFriends: [Arkadaslar]
+    
+//
+//    let id: Int
+//    let userName:String
+//    let email: String
+//    let photo: UInt32
+//    let level, life: Int
+//    let levelName: String
+//    let score: Int
+//    let userPosition: String
+//    let userFriends: [Arkadaslar]
+
+
+       
+
 }
+struct Arkadaslar:Codable{
+    
+        let id: Int
+        let userName:String
+        let email: String
+        let photo: String?
+        let level, life: Int
+        let levelName: String
+        let score: Int
+        let userPosition: String
+    
+    
+}
+
+
+
+
+

@@ -10,6 +10,6 @@ struct LoginResponseModel:Codable{
     
     let code : String
     let data : DataModel
- 
 
 }
+

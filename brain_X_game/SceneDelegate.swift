@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         if (UserDefaults.standard.string(forKey: "token") != nil){
             
-            let Vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(identifier: "OyunSecimVC") as! OyunSecimVC
+            let Vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(identifier: "navigationID")
             
             self.window?.rootViewController = Vc
             
