@@ -50,6 +50,7 @@
 		6FE37BC028BCDE92001C6735 /* UserDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE37BBF28BCDE92001C6735 /* UserDataModel.swift */; };
 		6FE37BC228BCDFA5001C6735 /* OyunSeviyesiBelirleme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE37BC128BCDFA5001C6735 /* OyunSeviyesiBelirleme.swift */; };
 		6FE37BC428BE9709001C6735 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE37BC328BE9709001C6735 /* WebService.swift */; };
+		6FF4BE1F28F5D56100C102B3 /* oyunOdasiSonucuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF4BE1E28F5D56100C102B3 /* oyunOdasiSonucuVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +118,7 @@
 		6FE37BBF28BCDE92001C6735 /* UserDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataModel.swift; sourceTree = "<group>"; };
 		6FE37BC128BCDFA5001C6735 /* OyunSeviyesiBelirleme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OyunSeviyesiBelirleme.swift; sourceTree = "<group>"; };
 		6FE37BC328BE9709001C6735 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		6FF4BE1E28F5D56100C102B3 /* oyunOdasiSonucuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oyunOdasiSonucuVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 				6F2332E728D1A64A00A09A77 /* FriendsTableViewCell.swift */,
 				6F43FA8628BAB90F00D9A561 /* RegisterService.swift */,
 				6FBC64F528C8A2B800083B24 /* OyunSonucuVC.swift */,
+				6FF4BE1E28F5D56100C102B3 /* oyunOdasiSonucuVC.swift */,
 				6FE37BBB28BCD33D001C6735 /* UserProfilViewController.swift */,
 				6F43FA4F28BAB7BA00D9A561 /* ViewController.swift */,
 			);
@@ -407,6 +410,7 @@
 				6F43FA9528BABA1600D9A561 /* LoginRequestModel.swift in Sources */,
 				6FE37BBC28BCD33D001C6735 /* UserProfilViewController.swift in Sources */,
 				6F43FA8728BAB91000D9A561 /* RegisterService.swift in Sources */,
+				6FF4BE1F28F5D56100C102B3 /* oyunOdasiSonucuVC.swift in Sources */,
 				6F43FA5028BAB7BA00D9A561 /* ViewController.swift in Sources */,
 				6F2332F028D337ED00A09A77 /* OyunOdasiVC.swift in Sources */,
 				6F43FA5628BAB7BA00D9A561 /* brain_X_game.xcdatamodeld in Sources */,

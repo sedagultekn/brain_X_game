@@ -32,7 +32,8 @@ class odaOlusturVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         
-        
+        // self.levelName.text =   json.data.id
+         self.levelName.text = UserDefaults.standard.string(forKey: "levelName")
      
     }
     override func viewDidAppear(_ animated: Bool) {
@@ -183,12 +184,12 @@ class odaOlusturVC: UIViewController {
                     print(str) // this is giving message HTTP Token: Access denied.
                     let json = try JSONDecoder().decode(CreateRoomResponseModel.self, from: data)
                     print (json)
-                    UserDefaults.standard.set(json.data.type, forKey: "levelName")
+                    
+                    
                     
                     DispatchQueue.main.async {
-                        
-                       // self.levelName.text =   json.data.id
-                        self.levelName.text = UserDefaults.standard.string(forKey: "levelName")
+                    
+                
                     }
                     
                 } catch let error {

@@ -54,6 +54,7 @@ class OyunSecimVC: UIViewController {
                     print(str) // this is giving message HTTP Token: Access denied.
                     let json = try JSONDecoder().decode(GetUserInfoModel.self, from: data)
                     print (json)
+                    UserDefaults.standard.set(json.data.levelName, forKey: "levelName")
                     
                 } catch let error {
                     print(error.localizedDescription)
