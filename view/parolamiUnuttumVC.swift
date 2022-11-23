@@ -24,10 +24,10 @@ class parolamiUnuttumVC: UIViewController {
         guard let requestUrl = url_ else{ fatalError()}
         var request = URLRequest(url: requestUrl)
         request.httpMethod = "POST"
-    //   var token = UserDefaults.standard.string(forKey: "token")
-      //  request.addValue("application/json", forHTTPHeaderField: "accept")
+       var token = UserDefaults.standard.string(forKey: "token")
+    request.addValue("application/json", forHTTPHeaderField: "accept")
         request.addValue("application/json", forHTTPHeaderField: "content-type")
-     //   request.addValue( "Bearer \(token)", forHTTPHeaderField: "Authorization")
+       request.addValue( "Bearer \(token)", forHTTPHeaderField: "Authorization")
         let newTodoItem = SendCodeModel(email: ePostaSifirla.text!)
         let jsonData = try? JSONEncoder().encode(newTodoItem)
         request.httpBody = jsonData

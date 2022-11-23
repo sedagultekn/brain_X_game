@@ -8,13 +8,16 @@
 import UIKit
 
 class RegisterService: UIViewController {
-
+    @IBOutlet weak var userNameTextField: UITextField!
+    
+    @IBOutlet weak var eMailTextField: UIView!
+    @IBOutlet weak var passwordTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 }
             
         
-      //  if (UserDefaults.standard.string(forKey: "token") != nil) {
+    
     @IBAction func RegisterButton(_ sender: Any) {
 
 
