@@ -9,7 +9,7 @@
     import Foundation
 struct GetRooms:Decodable {
     let code: String
-    let data: RoomsData
+    let data: [RoomsData]
 }
 
 // MARK: - Datum
@@ -17,7 +17,7 @@ struct RoomsData:Decodable {
     let id: Int
     let type: String
     let userCount, currentUserCount, createdUserID: Int
-    let createdUser: CreatedUserRoom
+    let createdUser: [CreatedUserRoom]
     let atRoomUsers: Int
 }
 

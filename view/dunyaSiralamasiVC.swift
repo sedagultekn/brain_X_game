@@ -7,11 +7,29 @@
 
 import UIKit
 
-class dunyaSiralamasiVC: UIViewController {
+class dunyaSiralamasiVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
+    
+    @IBOutlet weak var roomsTableView: UITableView!
+    
+    
+    var rooms = [CreatedUserRoom]()
+   
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return rooms.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = roomsTableView.dequeueReusableCell(withIdentifier: "roomsCell", for: indexPath)
+        cell.textLabel?.text = " \(rooms[indexPath.row].userName)"
+        return cell
+    }
+    
  
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        roomsTableView.delegate = self
+        roomsTableView.dataSource = self
         // Do any additional setup after loading the view.
     }
     
@@ -47,15 +65,20 @@ class dunyaSiralamasiVC: UIViewController {
                 do {
                     let str = String(decoding: data, as: UTF8.self)
                     print(str) // this is giving message HTTP Token: Access denied.
-                    let json = try JSONDecoder().decode(GetRooms.self, from: data)
+                    let json = try JSONDecoder().decode(RoomsData.self, from: data)
+                   
+                    self.rooms = json.createdUser
+                
+                    
                     print (json)
 
-                        DispatchQueue.main.async {
-
-                        }
+                    
+                    DispatchQueue.main.async {
+                        self.roomsTableView.reloadData()
+                    }
 
                 } catch let error {
-                    print(error.localizedDescription)
+                    debugPrint(error)
                     print("Seems to have an error: \(error)")
 
                 }
@@ -65,10 +88,12 @@ class dunyaSiralamasiVC: UIViewController {
                task.resume()
        
         }
+    
+ 
     }
 //extension ViewController : UITableViewDataSource {
 //    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        return     }
+//        return  countOfRooms  }
 //    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 //        <#code#>
 //    }

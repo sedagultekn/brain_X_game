@@ -8,7 +8,8 @@
 import UIKit
 
 class arkadaslarVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
-    
+    var userCount = 0
+    var topUsers = [User]()
     @IBOutlet weak var arkadaslarTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,17 +23,19 @@ class arkadaslarVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
             }
         }
     }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return topUsers.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = arkadaslarTableView.dequeueReusableCell(withIdentifier: "ArkadaslarCell", for: indexPath) as! FriendsTableViewCell
+        cell.textLabel?.text = " \(topUsers[indexPath.row].userName)"
         return cell
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        guard let urlString = URL(string: BASE_URL + "api/getUserInfo") else { return }
+        guard let urlString = URL(string: BASE_URL + "api/topUsers?TopCount=100") else { return }
         var requestAPI = URLRequest(url: urlString)
         let token = UserDefaults.standard.string(forKey: "token")
         requestAPI.httpMethod = "GET"
@@ -42,12 +45,14 @@ class arkadaslarVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
 
         let task = URLSession.shared.dataTask(with: requestAPI) { (data, response, error) in
             if let data = data {
+               // var topUsersList = [User]()
                 do {
                     let str = String(decoding: data, as: UTF8.self)
                     print(str) // this is giving message HTTP Token: Access denied.
-                    let json = try JSONDecoder().decode(GetUserInfoModel.self, from: data)
+                    let json = try JSONDecoder().decode(DunyaSiralamasiData.self, from: data)
+                    self.topUsers = json.data
                     print (json)
-
+                    //var userCount = json.data.count
                         DispatchQueue.main.async {
 
                         }
@@ -56,6 +61,11 @@ class arkadaslarVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
                     print(error.localizedDescription)
                     print("Seems to have an error: \(error)")
 
+               }
+//                self.topUsers = topUsersList
+                    
+                DispatchQueue.main.async {
+                    self.arkadaslarTableView.reloadData()
                 }
 
             }
