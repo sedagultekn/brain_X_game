@@ -19,6 +19,7 @@ class arkadaslarVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
         WebService().getUserDetails(url: url) { (arkadaslar) in
             if let arkadaslar = arkadaslar {
                 print(arkadaslar)
+                print(self.topUsers.count)
                 
             }
         }
